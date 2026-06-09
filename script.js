@@ -1,9 +1,4 @@
-/* ═══════════════════════════════════════════════════════════
-   ICICI Bank MultiCards – Vanilla JS
-   Form validation, Carousel, FAQ accordion
-   ═══════════════════════════════════════════════════════════ */
 
-/* ── Form Validation ──────────────────────────────────────── */
 (function () {
     var form = document.getElementById('applyForm');
     if (!form) return;
@@ -21,7 +16,7 @@
         e.preventDefault();
         var valid = true;
 
-        // Reset all errors
+
         document.querySelectorAll('.field').forEach(function (f) { f.classList.remove('has-error'); });
         document.querySelectorAll('.field-error').forEach(function (err) { err.style.display = 'none'; });
 
@@ -47,7 +42,7 @@
 })();
 
 
-/* ── Carousel ─────────────────────────────────────────────── */
+
 (function () {
     var track = document.getElementById('carouselTrack');
     var slides = track ? Array.from(track.children) : [];
@@ -58,7 +53,7 @@
     var nextBtn = document.getElementById('carNext');
     var current = 0;
 
-    // Build dots
+
     slides.forEach(function (_, i) {
         var dot = document.createElement('button');
         dot.className = 'c-dot' + (i === 0 ? ' active' : '');
@@ -78,7 +73,7 @@
         var nextIdx = current === slides.length - 1 ? 0 : current + 1;
 
         slides.forEach(function (slide, i) {
-            slide.className = 'carousel-slide'; // reset
+            slide.className = 'carousel-slide'; 
             if (i === current) slide.classList.add('active');
             else if (i === prevIdx) slide.classList.add('prev');
             else if (i === nextIdx) slide.classList.add('next');
@@ -89,27 +84,27 @@
         });
     }
 
-    // Initialize first state
+
     goTo(0);
 
     prevBtn.addEventListener('click', function () { goTo(current - 1); });
     nextBtn.addEventListener('click', function () { goTo(current + 1); });
 
-    // Auto-play every 4s
+
     setInterval(function () { goTo(current + 1); }, 4000);
 })();
 
 
-/* ── FAQ Accordion ────────────────────────────────────────── */
+
 (function () {
     var items = document.querySelectorAll('.faq-item');
     items.forEach(function (item) {
         var btn = item.querySelector('.faq-q');
         btn.addEventListener('click', function () {
             var wasActive = item.classList.contains('active');
-            // Close all
+
             items.forEach(function (it) { it.classList.remove('active'); });
-            // Toggle current
+
             if (!wasActive) item.classList.add('active');
         });
     });
