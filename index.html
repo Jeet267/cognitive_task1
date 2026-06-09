@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICICI Bank MultiCards</title>
-    <meta name="description" content="Apply for ICICI Bank Credit Cards - No Joining Fee & No Annual Fee. Curated for your lifestyle, packed with perks.">
+    <meta name="description"
+        content="Apply for ICICI Bank Credit Cards - No Joining Fee & No Annual Fee. Curated for your lifestyle, packed with perks.">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <!-- ════════════════════ HEADER ════════════════════ -->
@@ -30,38 +33,6 @@
                 <p class="hero-subtitle">No Joining Fee & No Annual Fee<sup>#</sup></p>
 
                 <div class="hero-visual">
-                    <!-- Pills ticker (bottom-to-top infinite) -->
-                    <div class="pill-ticker-viewport">
-                        <div class="pill-ticker-track">
-                            <!-- Set A -->
-                            <div class="pill pill--primary">
-                                <span class="pill-icon">🛍</span>
-                                <span>Instant cashback<br>on Apple products</span>
-                            </div>
-                            <div class="pill pill--highlight">
-                                <span class="pill-icon">✈</span>
-                                <span>Fly in style</span>
-                            </div>
-                            <div class="pill pill--highlight">
-                                <span class="pill-icon">%</span>
-                                <span>Activation Vouchers<br>worth ₹2,700*/-</span>
-                            </div>
-                            <!-- Set B (duplicate for seamless loop) -->
-                            <div class="pill pill--primary">
-                                <span class="pill-icon">🛍</span>
-                                <span>Instant cashback<br>on Apple products</span>
-                            </div>
-                            <div class="pill pill--highlight">
-                                <span class="pill-icon">✈</span>
-                                <span>Fly in style</span>
-                            </div>
-                            <div class="pill pill--highlight">
-                                <span class="pill-icon">%</span>
-                                <span>Activation Vouchers<br>worth ₹2,700*/-</span>
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- Man image -->
                     <div class="man-wrapper">
                         <img src="No_Fee_Page.gif" alt="Man pointing at credit cards" class="man-img" id="manImage">
@@ -82,32 +53,59 @@
                     </div>
                     <form id="applyForm" class="form-card-body" novalidate>
                         <div class="field" id="fieldFullName">
-                            <span class="field-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e55c20" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+                            <span class="field-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                    stroke="#e55c20" stroke-width="1.5">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                    <circle cx="12" cy="7" r="4" />
+                                </svg></span>
                             <input type="text" id="fullName" placeholder="Full Name">
                             <span class="field-error" id="fullNameErr">Full name is required</span>
                         </div>
                         <div class="field" id="fieldMobile">
-                            <span class="field-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e55c20" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></span>
+                            <span class="field-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                    stroke="#e55c20" stroke-width="1.5">
+                                    <rect x="5" y="2" width="14" height="20" rx="2" />
+                                    <path d="M12 18h.01" />
+                                </svg></span>
                             <input type="tel" id="mobile" placeholder="Mobile Number" maxlength="10">
                             <span class="field-error" id="mobileErr">Mobile number is required</span>
                         </div>
                         <div class="field" id="fieldEmail">
-                            <span class="field-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e55c20" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+                            <span class="field-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                    stroke="#e55c20" stroke-width="1.5">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg></span>
                             <input type="email" id="email" placeholder="Email">
                             <span class="field-error" id="emailErr">Email is required</span>
                         </div>
                         <div class="field" id="fieldPan">
-                            <span class="field-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e55c20" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8" cy="10" r="2"/><path d="M14 10h4M14 14h4"/></svg></span>
-                            <input type="text" id="pan" placeholder="PAN Number" maxlength="10" style="text-transform:uppercase">
+                            <span class="field-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                    stroke="#e55c20" stroke-width="1.5">
+                                    <rect x="3" y="4" width="18" height="16" rx="2" />
+                                    <circle cx="8" cy="10" r="2" />
+                                    <path d="M14 10h4M14 14h4" />
+                                </svg></span>
+                            <input type="text" id="pan" placeholder="PAN Number" maxlength="10"
+                                style="text-transform:uppercase">
                             <span class="field-error" id="panErr">PAN number is required</span>
                         </div>
                         <div class="field" id="fieldDob">
-                            <span class="field-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e55c20" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+                            <span class="field-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                    stroke="#e55c20" stroke-width="1.5">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" />
+                                    <path d="M16 2v4M8 2v4M3 10h18" />
+                                </svg></span>
                             <input type="text" id="dob" placeholder="Date of Birth (dd/mm/yyyy)" maxlength="10">
                             <span class="field-error" id="dobErr">Date of birth is required</span>
                         </div>
                         <div class="field field--select" id="fieldProf">
-                            <span class="field-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e55c20" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></span>
+                            <span class="field-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                    stroke="#e55c20" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 8v4l3 3" />
+                                </svg></span>
                             <select id="profession">
                                 <option value="" disabled selected>Profession</option>
                                 <option value="salaried">Salaried</option>
@@ -119,9 +117,12 @@
 
                         <div class="tnc-row">
                             <input type="checkbox" id="agreetnc">
-                            <label for="agreetnc">I agree to ICICI Bank's <a href="#" target="_blank">Terms &amp; Conditions</a> and <a href="#" target="_blank">Most Important Terms &amp; Conditions</a></label>
+                            <label for="agreetnc">I agree to ICICI Bank's <a href="#" target="_blank">Terms &amp;
+                                    Conditions</a> and <a href="#" target="_blank">Most Important Terms &amp;
+                                    Conditions</a></label>
                         </div>
-                        <span class="field-error tnc-error" id="tncErr">Please agree to our Terms & Conditions to proceed.</span>
+                        <span class="field-error tnc-error" id="tncErr">Please agree to our Terms & Conditions to
+                            proceed.</span>
 
                         <button type="submit" class="btn-apply" id="btnApply">Apply Now</button>
                     </form>
@@ -196,19 +197,31 @@
                 </div>
                 <div class="faq-body" id="faqBody">
                     <div class="faq-item active">
-                        <button class="faq-q"><span class="faq-toggle">+</span>What is the lowest Credit Card limit?</button>
-                        <div class="faq-a"><p>The Credit Card limit varies depending on the Card issuer.</p></div>
+                        <button class="faq-q"><span class="faq-toggle">+</span>What is the lowest Credit Card
+                            limit?</button>
+                        <div class="faq-a">
+                            <p>The Credit Card limit varies depending on the Card issuer.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-q"><span class="faq-toggle">+</span>How do I see my Credit Card number online?</button>
-                        <div class="faq-a"><p>You can find your ICICI Bank Credit Card number by logging into Internet Banking or the iMobile app.</p></div>
+                        <button class="faq-q"><span class="faq-toggle">+</span>How do I see my Credit Card number
+                            online?</button>
+                        <div class="faq-a">
+                            <p>You can find your ICICI Bank Credit Card number by logging into Internet Banking or the
+                                iMobile app.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-q"><span class="faq-toggle">+</span>How can I redeem Credit Card points for rewards?</button>
-                        <div class="faq-a"><p>You can enjoy seamless redemption of Rewards with ICICI Bank. Log into ICICI Bank Internet Banking or the iMobile app and navigate to the Rewards section.</p></div>
+                        <button class="faq-q"><span class="faq-toggle">+</span>How can I redeem Credit Card points for
+                            rewards?</button>
+                        <div class="faq-a">
+                            <p>You can enjoy seamless redemption of Rewards with ICICI Bank. Log into ICICI Bank
+                                Internet Banking or the iMobile app and navigate to the Rewards section.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-q"><span class="faq-toggle">+</span>How do I avail the BookMyShow offer?</button>
+                        <button class="faq-q"><span class="faq-toggle">+</span>How do I avail the BookMyShow
+                            offer?</button>
                         <div class="faq-a">
                             <p>Follow these steps to avail the BookMyShow offer:</p>
                             <ul>
@@ -239,10 +252,12 @@
             <p><sup>#</sup>Subject to eligibility</p>
             <p>*Terms and Conditions of ICICI Bank apply. For details visit <a href="#">www.icicibank.com</a></p>
             <p>Corporate Office Address: ICICI Bank Towers, Bandra-Kurla Complex, Mumbai 400 051.</p>
-            <p><a href="#">Privacy Policy</a> &nbsp;|&nbsp; For any further queries, contact our toll-free number - 1800 1080</p>
+            <p><a href="#">Privacy Policy</a> &nbsp;|&nbsp; For any further queries, contact our toll-free number - 1800
+                1080</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
