@@ -1,6 +1,4 @@
-/* ═══════════════════════════════════════════════════════════
-   CSS VARIABLES & RESET
-   ═══════════════════════════════════════════════════════════ */
+
 :root {
     --orange: #e55c20;
     --orange-dark: #c74d17;
@@ -29,9 +27,7 @@ body {
 
 .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
 
-/* ═══════════════════════════════════════════════════════════
-   HEADER
-   ═══════════════════════════════════════════════════════════ */
+
 .site-header {
     background: linear-gradient(to bottom, var(--header-top), var(--header-bottom));
     padding: 14px 0;
@@ -42,9 +38,7 @@ body {
 .logo-icon { color: #fff; font-size: 26px; line-height: 1; }
 .logo-text { color: #fff; font-size: 28px; font-weight: 900; font-style: italic; letter-spacing: -.5px; }
 
-/* ═══════════════════════════════════════════════════════════
-   HERO SECTION
-   ═══════════════════════════════════════════════════════════ */
+
 .hero {
     padding: 30px 0 20px;
     position: relative;
@@ -80,7 +74,7 @@ body {
 
 .hero-subtitle sup { font-size: 10px; }
 
-/* Hero visual area: pills + man + cards in ONE line */
+
 .hero-visual {
     display: flex;
     align-items: center;
@@ -89,7 +83,7 @@ body {
 }
 
 
-/* ── Man image ── */
+
 .man-wrapper {
     position: relative;
     z-index: 4;
@@ -104,7 +98,7 @@ body {
     display: block;
 }
 
-/* ── Card stack ── */
+
 .cards-wrapper {
     position: relative;
     z-index: 2;
@@ -127,7 +121,7 @@ body {
     100% { transform: translateY(8px); }
 }
 
-/* ── Form (right column) ── */
+
 .hero-form {
     width: 340px;
     flex-shrink: 0;
@@ -154,7 +148,7 @@ body {
 
 .form-card-body { padding: 6px 22px 20px; }
 
-/* Fields */
+
 .field {
     display: flex;
     align-items: center;
@@ -201,7 +195,7 @@ body {
     pointer-events: none;
 }
 
-/* Error messages */
+
 .field-error {
     display: none;
     color: var(--orange);
@@ -252,9 +246,7 @@ body {
 
 .btn-apply:hover { background: #a83e10; transform: scale(1.02); }
 
-/* ═══════════════════════════════════════════════════════════
-   EXCLUSIVE PRIVILEGES – CAROUSEL
-   ═══════════════════════════════════════════════════════════ */
+
 .privileges {
     padding: 50px 0 60px;
     text-align: center;
@@ -392,9 +384,7 @@ body {
     border-radius: 10px;
 }
 
-/* ═══════════════════════════════════════════════════════════
-   FAQS
-   ═══════════════════════════════════════════════════════════ */
+
 .faqs {
     padding: 20px 0 60px;
 }
@@ -504,9 +494,7 @@ body {
 
 .btn-viewmore:hover { background: var(--orange-dark); }
 
-/* ═══════════════════════════════════════════════════════════
-   FOOTER
-   ═══════════════════════════════════════════════════════════ */
+
 .site-footer {
     background: linear-gradient(to bottom, var(--header-top), var(--header-bottom));
     padding: 24px 0;
@@ -519,11 +507,7 @@ body {
 .footer-content p { margin: 2px 0; }
 .site-footer a { color: #fff; text-decoration: underline; }
 
-/* ═══════════════════════════════════════════════════════════
-   RESPONSIVE
-   ═══════════════════════════════════════════════════════════ */
 
-/* Tablet */
 @media (max-width: 1024px) {
     .hero-layout {
         flex-direction: column;
@@ -539,7 +523,7 @@ body {
     .cards-wrapper { margin-left: -30px; }
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
     .hero-title { font-size: 22px; }
     .hero-subtitle { font-size: 16px; }
