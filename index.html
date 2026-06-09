@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICICI Bank MultiCards</title>
+    <meta name="description" content="Apply for ICICI Bank Credit Cards - No Joining Fee & No Annual Fee. Curated for your lifestyle, packed with perks.">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ════════════════════ HEADER ════════════════════ -->
+    <header class="site-header" id="siteHeader">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">&#9679;</span>
+                <span class="logo-text">ICICI Bank</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ════════════════════ HERO / BANNER ════════════════════ -->
+    <section class="hero" id="heroSection">
+        <div class="container hero-layout">
+
+            <!-- Left side: Title + Pills + Man + Cards -->
+            <div class="hero-content">
+                <h1 class="hero-title">Curated for your lifestyle.<br>Packed with perks</h1>
+                <p class="hero-subtitle">No Joining Fee & No Annual Fee<sup>#</sup></p>
+
+                <div class="hero-visual">
+                    <!-- Pills ticker (bottom-to-top infinite) -->
+                    <div class="pill-ticker-viewport">
+                        <div class="pill-ticker-track">
+                            <!-- Set A -->
+                            <div class="pill pill--primary">
+                                <span class="pill-icon">🛍</span>
+                                <span>Instant cashback<br>on Apple products</span>
+                            </div>
+                            <div class="pill pill--highlight">
+                                <span class="pill-icon">✈</span>
+                                <span>Fly in style</span>
+                            </div>
+                            <div class="pill pill--highlight">
+                                <span class="pill-icon">%</span>
+                                <span>Activation Vouchers<br>worth ₹2,700*/-</span>
+                            </div>
+                            <!-- Set B (duplicate for seamless loop) -->
+                            <div class="pill pill--primary">
+                                <span class="pill-icon">🛍</span>
+                                <span>Instant cashback<br>on Apple products</span>
+                            </div>
+                            <div class="pill pill--highlight">
+                                <span class="pill-icon">✈</span>
+                                <span>Fly in style</span>
+                            </div>
+                            <div class="pill pill--highlight">
+                                <span class="pill-icon">%</span>
+                                <span>Activation Vouchers<br>worth ₹2,700*/-</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Man image -->
+                    <div class="man-wrapper">
+                        <img src="No_Fee_Page.gif" alt="Man pointing at credit cards" class="man-img" id="manImage">
+                    </div>
+
+                    <!-- Card stack -->
+                    <div class="cards-wrapper">
+                        <img src="card_desktop.webp" alt="ICICI Bank Credit Cards" class="cards-img" id="cardsImage">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right side: Application Form -->
+            <div class="hero-form">
+                <div class="form-card" id="formCard">
+                    <div class="form-card-header">
+                        <h3>Fill the form below</h3>
+                    </div>
+                    <form id="applyForm" class="form-card-body" novalidate>
+                        <div class="field" id="fieldFullName">
+                            <span class="field-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e55c20" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+                            <input type="text" id="fullName" placeholder="Full Name">
+                            <span class="field-error" id="fullNameErr">Full name is required</span>
+                        </div>
+                        <div class="field" id="fieldMobile">
+                            <span class="field-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e55c20" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></span>
+                            <input type="tel" id="mobile" placeholder="Mobile Number" maxlength="10">
+                            <span class="field-error" id="mobileErr">Mobile number is required</span>
+                        </div>
+                        <div class="field" id="fieldEmail">
+                            <span class="field-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e55c20" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+                            <input type="email" id="email" placeholder="Email">
+                            <span class="field-error" id="emailErr">Email is required</span>
+                        </div>
+                        <div class="field" id="fieldPan">
+                            <span class="field-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e55c20" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8" cy="10" r="2"/><path d="M14 10h4M14 14h4"/></svg></span>
+                            <input type="text" id="pan" placeholder="PAN Number" maxlength="10" style="text-transform:uppercase">
+                            <span class="field-error" id="panErr">PAN number is required</span>
+                        </div>
+                        <div class="field" id="fieldDob">
+                            <span class="field-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e55c20" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+                            <input type="text" id="dob" placeholder="Date of Birth (dd/mm/yyyy)" maxlength="10">
+                            <span class="field-error" id="dobErr">Date of birth is required</span>
+                        </div>
+                        <div class="field field--select" id="fieldProf">
+                            <span class="field-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e55c20" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></span>
+                            <select id="profession">
+                                <option value="" disabled selected>Profession</option>
+                                <option value="salaried">Salaried</option>
+                                <option value="self-employed">Self Employed</option>
+                            </select>
+                            <span class="select-arrow">&#8964;</span>
+                            <span class="field-error" id="profErr">Select your profession</span>
+                        </div>
+
+                        <div class="tnc-row">
+                            <input type="checkbox" id="agreetnc">
+                            <label for="agreetnc">I agree to ICICI Bank's <a href="#" target="_blank">Terms &amp; Conditions</a> and <a href="#" target="_blank">Most Important Terms &amp; Conditions</a></label>
+                        </div>
+                        <span class="field-error tnc-error" id="tncErr">Please agree to our Terms & Conditions to proceed.</span>
+
+                        <button type="submit" class="btn-apply" id="btnApply">Apply Now</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ════════════════════ EXCLUSIVE PRIVILEGES ════════════════════ -->
+    <section class="privileges" id="privilegesSection">
+        <div class="container">
+            <h2 class="section-title">Exclusive Privileges</h2>
+
+            <div class="carousel" id="carousel">
+                <button class="carousel-arrow carousel-arrow--left" id="carPrev" aria-label="Previous">&#8249;</button>
+
+                <div class="carousel-viewport">
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Slide 1 -->
+                        <div class="carousel-slide">
+                            <div class="priv-card">
+                                <p class="priv-card-sup">Get</p>
+                                <h3 class="priv-card-title">ACTIVATION VOUCHER</h3>
+                                <p class="priv-card-desc">with up to<br>₹1,500/- off*.</p>
+                                <div class="priv-card-brand brand-reliance">Reliance Digital</div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-slide">
+                            <div class="priv-card">
+                                <h3 class="priv-card-title priv-card-title--accent">ENJOY BENEFITS</h3>
+                                <p class="priv-card-desc">worth up to<br>₹500/- off*<br>on your tickets.</p>
+                                <div class="priv-card-brand brand-bms">book<span>my</span>show</div>
+                                <em class="priv-card-note">*available on selected cards</em>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="carousel-slide">
+                            <div class="priv-card">
+                                <p class="priv-card-sup">Avail</p>
+                                <h3 class="priv-card-title priv-card-title--accent">APPLE OFFER</h3>
+                                <p class="priv-card-desc">with up to<br>₹7,000/- off</p>
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="carousel-slide">
+                            <div class="priv-card">
+                                <p class="priv-card-sup">Get</p>
+                                <h3 class="priv-card-title">Activation voucher</h3>
+                                <p class="priv-card-desc">with<br>Flat ₹1,200/- off.</p>
+                                <div class="priv-card-brand brand-ixigo">ixigo</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-arrow carousel-arrow--right" id="carNext" aria-label="Next">&#8250;</button>
+            </div>
+
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+    </section>
+
+    <!-- ════════════════════ FAQS ════════════════════ -->
+    <section class="faqs" id="faqSection">
+        <div class="container">
+            <div class="faq-box">
+                <div class="faq-header">
+                    <span class="faq-header-icon">?</span>
+                    <span>FAQs</span>
+                </div>
+                <div class="faq-body" id="faqBody">
+                    <div class="faq-item active">
+                        <button class="faq-q"><span class="faq-toggle">+</span>What is the lowest Credit Card limit?</button>
+                        <div class="faq-a"><p>The Credit Card limit varies depending on the Card issuer.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q"><span class="faq-toggle">+</span>How do I see my Credit Card number online?</button>
+                        <div class="faq-a"><p>You can find your ICICI Bank Credit Card number by logging into Internet Banking or the iMobile app.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q"><span class="faq-toggle">+</span>How can I redeem Credit Card points for rewards?</button>
+                        <div class="faq-a"><p>You can enjoy seamless redemption of Rewards with ICICI Bank. Log into ICICI Bank Internet Banking or the iMobile app and navigate to the Rewards section.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q"><span class="faq-toggle">+</span>How do I avail the BookMyShow offer?</button>
+                        <div class="faq-a">
+                            <p>Follow these steps to avail the BookMyShow offer:</p>
+                            <ul>
+                                <li>Select the movie you want to watch</li>
+                                <li>Go to 'Book Tickets'</li>
+                                <li>Select the location and time</li>
+                                <li>Select the number of seats and proceed</li>
+                                <li>Go to 'Pay' and accept the T&amp;Cs</li>
+                                <li>Click on 'Unlock Offers' or 'Apply Promo Codes'</li>
+                                <li>Choose 'Credit Cards' option</li>
+                                <li>Type 'ICICI' in the search bar and select your offer</li>
+                                <li>Enter your full Credit Card number</li>
+                                <li>The offer will be applied, then proceed with payment.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-footer">
+                    <button class="btn-viewmore" id="btnViewMore">View More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════ FOOTER ════════════════════ -->
+    <footer class="site-footer" id="siteFooter">
+        <div class="container footer-content">
+            <p><sup>#</sup>Subject to eligibility</p>
+            <p>*Terms and Conditions of ICICI Bank apply. For details visit <a href="#">www.icicibank.com</a></p>
+            <p>Corporate Office Address: ICICI Bank Towers, Bandra-Kurla Complex, Mumbai 400 051.</p>
+            <p><a href="#">Privacy Policy</a> &nbsp;|&nbsp; For any further queries, contact our toll-free number - 1800 1080</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
